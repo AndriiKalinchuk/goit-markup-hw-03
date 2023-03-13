@@ -1,0 +1,132 @@
+:root {
+  --text-color: #434455;
+  --dark-color: #2e2f42;
+  --pressed-state-color: #404bbf;
+  --primary-brand-color: #4d5ae5;
+  --accent-color: #e7e9fc;
+  --white-color: #ffffff;
+  --light-color: #f4f4fd;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  color: var(--text-color);
+  background-color: var(--white-color);
+}
+
+ul {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.logotype {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-brand-color);
+}
+
+.studio-header {
+  color: var(--dark-color);
+}
+
+.site-nav .link {
+  color: var(--dark-color);
+  font-weight: 500;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--pressed-state-color);
+}
+
+.site-nav .link.current {
+  color: var(--pressed-state-color);
+}
+
+.contacts .link {
+  font-style: normal;
+  color: var(--text-color);
+}
+
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--pressed-state-color);
+}
+
+.button {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button.primary {
+  color: var(--white-color);
+  background: var(--primary-brand-color);
+}
+
+.button.primary:hover,
+.button.primary:focus {
+  background: var(--pressed-state-color);
+}
+
+.button.secondary {
+  color: var(--primary-brand-color);
+  background: var(--light-color);
+  border: 1px solid var(--accent-color);
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+  color: var(--white-color);
+  background: var(--pressed-state-color);
+}
+
+.main-title {
+  font-size: 56px;
+  line-height: 1.07;
+  color: var(--white-color);
+}
+
+.hero {
+  background: var(--dark-color);
+  text-align: center;
+}
+
+.definition {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--dark-color);
+}
+
+.subtitle {
+  font-size: 36px;
+  line-height: 1.11;
+  text-transform: capitalize;
+  color: var(--dark-color);
+  text-align: center;
+}
+
+.footer {
+  background: var(--dark-color);
+}
+
+.studio-footer {
+  color: var(--light-color);
+}
+
+.text-footer {
+  color: var(--accent-color);
+}
