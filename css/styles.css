@@ -27,6 +27,10 @@ body {
   background-color: var(--white-color);
 }
 
+.link {
+  text-decoration: none;
+}
+
 ul {
   list-style: none;
   margin-top: 0;
@@ -55,18 +59,8 @@ p {
   margin-right: auto;
   margin-left: auto;
   width: 1158px;
-  background-color: tomato;
-}
-
-header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.container-inner {
-  display: flex;
-  background-color: greenyellow;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .section-goals {
@@ -84,12 +78,17 @@ header .container {
   padding-bottom: 120px;
 }
 
-.link {
-  text-decoration: none;
-}
 /*HEADER*/
 
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .logotype {
+  display: flex;
+  align-items: center;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -97,6 +96,7 @@ header .container {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-brand-color);
+  text-decoration: none;
 }
 
 .studio-header {
@@ -104,15 +104,20 @@ header .container {
 }
 .site-nav {
   display: flex;
-  align-items: start;
-  justify-content: space-between;
+  margin-left: 76px;
 }
 
 .site-nav .link {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: block;
   color: var(--dark-color);
   font-weight: 500;
 }
 
+.site-nav .item + .item {
+  margin-left: 40px;
+}
 .site-nav .link:hover,
 .site-nav .link:focus,
 .site-nav .link.current,
@@ -123,10 +128,11 @@ header .container {
 
 .contacts {
   display: flex;
-  align-items: end;
-  justify-content: space-between;
-  margin-top: 24px;
-  margin-bottom: 24px;
+  margin-left: auto;
+}
+
+.contacts .item + .item {
+  margin-left: 40px;
 }
 
 .contacts .link {
