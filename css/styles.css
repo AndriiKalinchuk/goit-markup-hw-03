@@ -297,6 +297,7 @@ img {
 .portfolio-li p {
   margin-bottom: 0;
   margin-left: 16px;
+  margin-bottom: 32px;
 }
 .portfolio-border {
   border-right: 1px solid #e7e9fc;
