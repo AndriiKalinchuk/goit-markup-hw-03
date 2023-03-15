@@ -38,6 +38,7 @@ ul {
 }
 
 p {
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -63,22 +64,15 @@ p {
   padding-right: 15px;
 }
 
-.section-goals {
-  padding-top: 120px;
-  padding-bottom: 0;
-}
-
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
 }
 
-.section-portfolio {
-  padding-top: 96px;
-  padding-bottom: 120px;
-}
-
 /*HEADER*/
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
 
 .main-nav {
   display: flex;
@@ -89,6 +83,7 @@ p {
 .logotype {
   display: flex;
   align-items: center;
+  margin-right: 76px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -104,12 +99,11 @@ p {
 }
 .site-nav {
   display: flex;
-  margin-left: 76px;
+  padding: 0;
 }
 
 .site-nav .link {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 24px 0;
   display: block;
   color: var(--dark-color);
   font-weight: 500;
@@ -118,6 +112,7 @@ p {
 .site-nav .item + .item {
   margin-left: 40px;
 }
+
 .site-nav .link:hover,
 .site-nav .link:focus,
 .site-nav .link.current,
@@ -127,6 +122,7 @@ p {
 }
 
 .contacts {
+  padding: 0;
   display: flex;
   margin-left: auto;
 }
@@ -197,7 +193,22 @@ p {
 
 /*GOALS, GOALS ILLUSTRATIONS, TEAM PHOTO, PORTFOLIO*/
 
+.section-goals {
+  padding-top: 120px;
+  padding-bottom: 0;
+}
+.goals-ul {
+  display: flex;
+  padding-left: 0;
+  gap: 24px;
+}
+
+.goals-item {
+  flex-basis: 264px;
+}
+
 .subtitle {
+  margin: 0 0 72px 0;
   font-size: 36px;
   line-height: 1.11;
   text-transform: capitalize;
@@ -211,6 +222,43 @@ p {
   font-size: 20px;
   line-height: 1.2;
   color: var(--dark-color);
+}
+
+.goals-ul .definition {
+  margin: 0 0 8px;
+}
+
+.goals-illustrations,
+.team-photoes {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 24px;
+}
+
+.illustration {
+  display: block;
+}
+
+.teamphotoes-bgr {
+  background-color: var(--light-color);
+}
+
+.team-photoes .definition {
+  text-align: center;
+}
+
+.team-photoes p {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.teamphotoes-li {
+  background-color: var(--white-color);
+}
+.section-portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
 
 /*FOOTER*/
