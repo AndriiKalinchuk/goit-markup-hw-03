@@ -265,6 +265,9 @@ img {
 
 .teamphotoes-li {
   background-color: var(--white-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .section-portfolio {
@@ -296,21 +299,26 @@ img {
   width: 360px;
 }
 
-.portfolio-border .definition {
-  padding-top: 32px;
-  margin-top: 0;
+.portfolio-border {
+  border-right: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+}
+
+.definition-portfolio {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--dark-color);
+  margin-top: 32px;
+  margin-right: 0;
+  margin-bottom: 8px;
   margin-left: 16px;
 }
 
-.portfolio-li p {
-  margin-bottom: 0;
+.portfolio-business {
   margin-left: 16px;
   margin-bottom: 32px;
-}
-.portfolio-border {
-  border-right: 1px solid #e7e9fc;
-  border-bottom: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
 }
 
 /*FOOTER*/
@@ -328,5 +336,5 @@ img {
 .text-footer {
   max-width: 264px;
   color: var(--accent-color);
-  padding-top: 18px;
+  margin-top: 18px;
 }
